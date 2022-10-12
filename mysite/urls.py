@@ -23,4 +23,4 @@ urlpatterns = [
 ]
 
 # 500エラー対策
-handler500 = views.my_customized_server_error
+# handler500 = views.my_customized_server_error
