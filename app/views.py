@@ -31,10 +31,10 @@ class CallbackView(View):
      except InvalidSignatureError:
       # 署名検証で失敗した場合は、例外をあげる
         return HttpResponseBadRequest()
-     except LineBotApiError as e:
-       # APIのエラーが発生した場合は、例外をあげる
-       print(e)
-       return HttpResponseServerError()
+    #  except LineBotApiError as e:
+    #    # APIのエラーが発生した場合は、例外をあげる
+    #    print(e)
+    #    return HttpResponseServerError()
      
      # 処理が成功したらOKを表示
      return HttpResponse('OK')
